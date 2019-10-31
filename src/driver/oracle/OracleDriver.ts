@@ -679,6 +679,10 @@ export class OracleDriver implements Driver {
      */
     protected async createPool(options: OracleConnectionOptions, credentials: OracleConnectionCredentialsOptions): Promise<any> {
 
+        if (options.isOffline) {
+            return { close: () => {} };
+        }
+
         credentials = Object.assign(credentials, DriverUtils.buildDriverOptions(credentials)); // todo: do it better way
 
         // build connection options for the driver
@@ -697,7 +701,6 @@ export class OracleDriver implements Driver {
                 ok(pool);
             });
         });
-
     }
 
     /**

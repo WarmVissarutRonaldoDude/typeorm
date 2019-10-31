@@ -33,4 +33,5 @@ export interface OracleConnectionOptions extends BaseConnectionOptions, OracleCo
 
     };
 
+    readonly isOffline?: boolean;
 }
