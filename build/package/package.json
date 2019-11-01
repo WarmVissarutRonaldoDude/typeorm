@@ -1,7 +1,7 @@
 {
   "name": "typeorm",
   "private": false,
-  "version": "0.2.20",
+  "version": "0.2.20-beta1",
   "description": "Data-Mapper ORM for TypeScript, ES7, ES6, ES5. Supports MySQL, PostgreSQL, MariaDB, SQLite, MS SQL Server, Oracle, MongoDB databases.",
   "license": "MIT",
   "readmeFilename": "README.md",
@@ -9,17 +9,17 @@
     "name": "Umed Khudoiberdiev",
     "email": "pleerock.me@gmail.com"
   },
-  "main": "./build/compiled/src/index.js",
+  "main": "./build/package/index.js",
   "browser": {
-    "./browser/driver/postgres/PostgresDriver.js": "./browser/platform/BrowserDisabledDriversDummy.js",
-    "./browser/driver/oracle/OracleDriver.ts": "./browser/platform/BrowserDisabledDriversDummy.js",
-    "./browser/driver/mysql/MysqlDriver.js": "./browser/platform/BrowserDisabledDriversDummy.js",
-    "./browser/driver/sqlserver/SqlServerDriver.ts": "./browser/platform/BrowserDisabledDriversDummy.js",
-    "./browser/driver/mongodb/MongoDriver.js": "./browser/platform/BrowserDisabledDriversDummy.js",
-    "./browser/driver/mongodb/MongoQueryRunner.js": "./browser/platform/BrowserDisabledDriversDummy.js",
-    "./browser/entity-manager/MongoEntityManager.js": "./browser/platform/BrowserDisabledDriversDummy.js",
-    "./browser/repository/MongoRepository.js": "./browser/platform/BrowserDisabledDriversDummy.js",
-    "./index.js": "./browser/index.js"
+    "./browser/driver/postgres/PostgresDriver.js": "./build/package/browser/platform/BrowserDisabledDriversDummy.js",
+    "./browser/driver/oracle/OracleDriver.ts": "./build/package/browser/platform/BrowserDisabledDriversDummy.js",
+    "./browser/driver/mysql/MysqlDriver.js": "./build/package/browser/platform/BrowserDisabledDriversDummy.js",
+    "./browser/driver/sqlserver/SqlServerDriver.ts": "./build/package/browser/platform/BrowserDisabledDriversDummy.js",
+    "./browser/driver/mongodb/MongoDriver.js": "./build/package/browser/platform/BrowserDisabledDriversDummy.js",
+    "./browser/driver/mongodb/MongoQueryRunner.js": "./build/package/browser/platform/BrowserDisabledDriversDummy.js",
+    "./browser/entity-manager/MongoEntityManager.js": "./build/package/browser/platform/BrowserDisabledDriversDummy.js",
+    "./browser/repository/MongoRepository.js": "./build/package/browser/platform/BrowserDisabledDriversDummy.js",
+    "./index.js": "./build/package/browser/index.js"
   },
   "repository": {
     "type": "git",
